@@ -3,13 +3,17 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import Exercise from "./components/Exercise.tsx"
 
 function App() {
+
   const [count, setCount] = useState(0)
 
   return (
     <>
       <section id="center">
+        <Exercise name="Bench Press" sets="3" reps="5" weight="225"></Exercise>
+        <input type='text'></input>
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
           <img src={reactLogo} className="framework" alt="React logo" />
